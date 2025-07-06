@@ -71,3 +71,101 @@ nav li:hover {
     justify-content: flex-start; /* Switch to horizontal scroll on small screens */
   }
 }
+
+/* ===== Footer Section ===== */
+.site-footer {
+  background-color: #5c3d2e;
+  color: #fff9f0;
+  padding: 3rem 1rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-brand h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  color: #e5cfc1;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #f5d3b3;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #ffd7b5;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #e4b78e30;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-bottom .social-icons {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom .social-icons a {
+  margin: 0 0.75rem;
+  color: #ffd7b5;
+  text-decoration: none;
+}
+
+.footer-bottom .social-icons a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact {
+    width: 100%;
+  }
+}
