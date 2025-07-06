@@ -1,0 +1,52 @@
+/* ===== Contact Section CSS ===== */
+#contact {
+  background-color: #fff2e6;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #5c3d2e;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#contact h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #d4a373;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  color: #5c3d2e;
+  margin: 0.5rem 0;
+}
+
+.contact-details a {
+  color: #d4a373;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-details a:hover {
+  color: #b26e3f;
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
