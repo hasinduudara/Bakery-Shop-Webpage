@@ -1,0 +1,84 @@
+/* About Us Section */
+#about_us {
+  padding: 5rem 0;
+  background-color: #fff9f0; /* Warm bakery background */
+  position: relative;
+}
+
+#about_us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#about_us h2 {
+  font-size: 2.5rem;
+  color: #5c3d2e; /* Warm brown */
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  display: inline-block;
+}
+
+#about_us h2:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: #d4a373; /* Accent color */
+  bottom: -10px;
+  left: 25%;
+}
+
+#about_us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5c3d2e;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Decorative elements */
+#about_us:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(
+    90deg,
+    #d4a373 0%,
+    #f8e1c5 20%,
+    #f8e1c5 80%,
+    #d4a373 100%
+  );
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #about_us {
+    padding: 3rem 0;
+  }
+
+  #about_us h2 {
+    font-size: 2rem;
+  }
+
+  #about_us p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #about_us h2 {
+    font-size: 1.8rem;
+  }
+
+  #about_us p {
+    text-align: left;
+  }
+}
