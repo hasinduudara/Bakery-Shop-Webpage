@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5c3d2e; /* Warm brown color suitable for bakery */
+  margin-right: 2rem;
+  font-family: "Playfair Display", serif; /* Elegant serif font */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: #3e2723; /* Darker brown on hover */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block; /* Ensures items stay in one line */
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+nav li:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Optional: Add a subtle background on hover */
+nav li:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* For very small screens, you might want to add media queries */
+@media (max-width: 600px) {
+  nav {
+    justify-content: flex-start; /* Switch to horizontal scroll on small screens */
+  }
+}
