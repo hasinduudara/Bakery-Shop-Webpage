@@ -1,0 +1,75 @@
+/* Section background & spacing */
+#hours {
+  background-color: #fff2e6;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+/* Heading */
+#hours h2 {
+  font-family: "Playfair Display", serif;
+  color: #5c3d2e;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+#hours h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #d4a373;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Container */
+.hours-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Table styling */
+.hours-table-wrapper {
+  overflow-x: auto;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffaf5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 1rem;
+  border: 1px solid #eee;
+  font-size: 1.1rem;
+  color: #5c3d2e;
+}
+
+.hours-table thead {
+  background-color: #fff5e0;
+}
+
+.closed {
+  color: #d9534f;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  #hours h2 {
+    font-size: 2rem;
+  }
+
+  .hours-table th,
+  .hours-table td {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}

@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="/css/hero_section.css" />
     <link rel="stylesheet" href="/css/about_us.css" />
     <link rel="stylesheet" href="/css/our_products.css" />
+    <link rel="stylesheet" href="/css/opening_hours.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500;600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -58,67 +63,95 @@
         </div>
       </section>
 
-      <section id="products" class="py-5 bg-light">
+      <section id="products" class="products-section">
         <div class="container">
-          <h2 class="text-center mb-5">Our Products</h2>
-          <div class="row">
+          <h2>Our Products</h2>
+          <div class="product-grid">
             <!-- Product Card 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <img
-                  src="/assets/image/Fresh Bread.jpg"
-                  class="card-img-top"
-                  alt="Fresh Bread"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Fresh Bread</h5>
-                  <p class="card-text">
-                    Soft, golden loaves baked fresh every morning. Perfect for
-                    sandwiches or toasting.
-                  </p>
-                  <p class="text-muted">Rs. 150</p>
-                </div>
+            <div class="product-card">
+              <img
+                src="/assets/image/Fresh Bread.jpg"
+                alt="Fresh Bread"
+                class="product-img"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Fresh Bread</h5>
+                <p class="product-desc">
+                  Soft, golden loaves baked fresh every morning. Perfect for
+                  sandwiches or toasting.
+                </p>
+                <p class="product-price">Rs. 150</p>
               </div>
             </div>
 
             <!-- Product Card 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <img
-                  src="/assets/image/Chocolate Cake.jpg"
-                  class="card-img-top"
-                  alt="Chocolate Cake"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Chocolate Cake</h5>
-                  <p class="card-text">
-                    Rich and moist chocolate cake layered with ganache. Great
-                    for birthdays!
-                  </p>
-                  <p class="text-muted">Rs. 500</p>
-                </div>
+            <div class="product-card">
+              <img
+                src="/assets/image/Chocolate Cake.jpg"
+                alt="Chocolate Cake"
+                class="product-img"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Chocolate Cake</h5>
+                <p class="product-desc">
+                  Rich and moist chocolate cake layered with ganache. Great for
+                  birthdays!
+                </p>
+                <p class="product-price">Rs. 500</p>
               </div>
             </div>
 
             <!-- Product Card 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <img
-                  src="/assets/image/Butter Croissant.jpg"
-                  class="card-img-top"
-                  alt="Butter Croissant"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Butter Croissant</h5>
-                  <p class="card-text">
-                    Flaky, buttery layers baked to perfection. A French classic!
-                  </p>
-                  <p class="text-muted">Rs. 200</p>
-                </div>
+            <div class="product-card">
+              <img
+                src="/assets/image/Butter Croissant.jpg"
+                alt="Butter Croissant"
+                class="product-img"
+              />
+              <div class="product-info">
+                <h5 class="product-title">Butter Croissant</h5>
+                <p class="product-desc">
+                  Flaky, buttery layers baked to perfection. A French classic!
+                </p>
+                <p class="product-price">Rs. 200</p>
               </div>
             </div>
           </div>
-          <button id="view_more" class="view-more-btn">View More</button>
+
+          <div class="view-more-container">
+            <button id="view_more" class="view-more-btn">View More</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="hours">
+        <div class="hours-container">
+          <h2>Opening Hours</h2>
+
+          <div class="hours-table-wrapper">
+            <table class="hours-table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Opening Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday – Friday</td>
+                  <td>7:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>7:00 AM – 2:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td><strong class="closed">Closed</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>
